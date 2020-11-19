@@ -85,7 +85,7 @@ export default {
         while (currNode.next !== null && currNode.next.element !== item) {
           currNode = currNode.next
         }
-        if (currNode.next !== item) {
+        if (currNode.next.element === item) {
           return currNode
         } else {
           return null
